@@ -6,10 +6,12 @@
 #include <cstdlib>
 #include <utility>
 #include <algorithm>
+
 #include "Customer.h"
 #include "B_Tree_Customer.h"
 #include "HashTable.h"
 #include "Heap.h"
+
 using namespace std;
 
 const int MaxN = 100001;
