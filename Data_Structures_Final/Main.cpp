@@ -370,6 +370,6 @@ int main()
 		getline(cin, line);
 	}
 	fout.close();
-	cout<<"All Done!\n Note : All commands after last save have been saved at \"CommandsLog.txt\" !"<<endl;
+	cout<<"All Done!\n Note : All commands after last save have been saved at \"CommandsLog.txt\" in the execution directory!"<<endl;
 	return 0;
 }
