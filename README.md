@@ -73,6 +73,3 @@ or
 INPUT
 LOAD
 ```
-
-## Commands
-
