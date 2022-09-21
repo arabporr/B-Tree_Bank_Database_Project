@@ -38,7 +38,7 @@ void REGISTER(string fName, string lName, int val)
 		ListOfCustomers[temp->id] = temp;
 		DataBase->insert(temp);
 		NameTable->add(fName+lName);
-		cout<<"Registeration Successfull!,\n\t"<<temp->name<<" "<<temp->lastname<<" "<<temp->id<<" "<<temp->asset<<endl;
+		cout<<"Registration Successful!,\n\t"<<temp->name<<" "<<temp->lastname<<" "<<temp->id<<" "<<temp->asset<<endl;
 	}
 	return;
 }
@@ -57,7 +57,7 @@ void DELETE(int user_id)
 		NameTable->deactive((current->name+current->lastname));
 		FreeIDs->insert_item(current->id);
 		DataBase->remove(current);
-		cout<<"Deletion Successfull!"<<endl;
+		cout<<"Deletion Successful!"<<endl;
 	}
 }
 
@@ -241,7 +241,7 @@ void handle(string line)
 			else
 			{
 				DataBase->remove(current);
-				cout<<"Change Successfull,\n\t"<<current->name<<" "<<current->lastname<<" "<<current->id<<" "<<current->asset<<" Changed to -> "<<current->asset+val<<endl;
+				cout<<"Change Successful,\n\t"<<current->name<<" "<<current->lastname<<" "<<current->id<<" "<<current->asset<<" Changed to -> "<<current->asset+val<<endl;
 				current->asset = current->asset+val;
 				DataBase->insert(current);
 				RICHEST = DataBase->getRichest();
@@ -295,7 +295,7 @@ void handle(string line)
 			}
 			Customer* winner = ListOfCustomers[nominates[nominates.size() - winner_pos].second];
 			DataBase->remove(winner);
-			cout<<"REWARD Successfull,\n\t"<<"WINNER : "<<winner->name<<" "<<winner->lastname<<" "<<winner->id<<" "<<winner->asset<<" Changed to -> "<<winner->asset+prize<<endl;
+			cout<<"REWARD Successful,\n\t"<<"WINNER : "<<winner->name<<" "<<winner->lastname<<" "<<winner->id<<" "<<winner->asset<<" Changed to -> "<<winner->asset+prize<<endl;
 			winner->asset = winner->asset+prize;
 			DataBase->insert(winner);
 			RICHEST = DataBase->getRichest();
