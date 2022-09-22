@@ -79,7 +79,7 @@ public:
 			}
 			current = current->next;
 		}
-		cout<<"INTERNAL ERROR !!! REMOVEING NOT EXISTING NAME FROM NAMETABLE"<<endl;
+		cout<<"INTERNAL ERROR !!! REMOVING NOT EXISTING NAME FROM NAMETABLE"<<endl;
 		return;
 	}
 
